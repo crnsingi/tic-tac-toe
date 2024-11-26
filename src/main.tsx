@@ -5,6 +5,6 @@ import Game from './Game';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <Game />
   </StrictMode>,
 )
