@@ -1,3 +1,10 @@
+# Tic - Tac - Toe
+
+## This project was built with React for the framework
+## TypeScript for type-safe programming
+## Tailwind CSS for styling,
+## Vite for its high-performance build process.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
