@@ -1,5 +1,5 @@
 function Game() {
-  return <div> Tic Tac Toe Game Page</div>;
+  return <div className="h-full p-8 text-slate-800 bg-gradient-from-r from-cyan-500 to-blue-500"> <h1>Tic Tac Toe Game Page</h1></div>;
 
 }
 
