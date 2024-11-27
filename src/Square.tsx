@@ -11,7 +11,7 @@ function Square({ player }: Props) {
 
     return (
         <div className={`"h-36 border-solid border-4 border-slate-200 font-display text-7xl text-center flex justify-center items-center cursor-pointer ${hoverStyle}"`}>
-            <span>{player}</span>
+            <span className={``}>{player}</span>
         </div>
     );
 }
