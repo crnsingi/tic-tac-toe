@@ -7,8 +7,8 @@ const INITIAL_GAME_STATE = ["X","O","X","","","","","",""];
 function Game() {
   const [gameState, setGameState] = useState(INITIAL_GAME_STATE);
   
-  const handleCellClick = () => {
-    console.log("cell clicked!");
+  const handleCellClick = (event: any) => {
+    console.log("cell clicked!", event.target.getAttribute("data-cell-index"));
   };
 
 
