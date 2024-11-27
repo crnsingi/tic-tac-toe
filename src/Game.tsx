@@ -1,11 +1,19 @@
+import { useState } from "react";
+
+const INITIAL_GAME_STATE = ["X","O","","","","","","",""];
+
 function Game() {
   return ( 
-  <div className="h-full p-8 text-slate-800 bg-gradient-from-r from-cyan-500 to-blue-500">
+  <div className="h-full p-8 text-slate-800 bg-gradient-to-r from-cyan-500 to-blue-500">
      <h1 className="text-center text-5xl mb-4 font-display text-white">
       Tic Tac Toe Game Page
       </h1>
       <div>
-        <div>Board Goes Here</div>
+        <div>
+        {INITIAL_GAME_STATE.map((player, index) => (
+          <div>{player}</div>
+        ))}
+        </div>
 
         <div>Scores Go Here</div>
       </div>
@@ -13,4 +21,4 @@ function Game() {
   );
 }
 
-export default Game
+export default Game;
