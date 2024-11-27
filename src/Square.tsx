@@ -1,7 +1,7 @@
+import { ReactNode } from "react";
 
 type Props ={
-    children:
-    
+    children: ReactNode
 }
 
 function Square({ children }) {
