@@ -2,10 +2,15 @@ import { useState } from "react";
 
 import Square from "./Square";
 
-const INITIAL_GAME_STATE = ["X","X","X","","","","","",""];
+const INITIAL_GAME_STATE = ["X","O","X","","","","","",""];
 
 function Game() {
   const [gameState, setGameState] = useState(INITIAL_GAME_STATE);
+  
+  const handleCellClick = () => {
+    console.log("cell clicked!");
+  };
+
 
   return ( 
   <div className="h-full p-8 text-slate-800 bg-gradient-to-r from-cyan-500 to-blue-500">
