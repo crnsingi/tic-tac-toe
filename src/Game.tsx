@@ -2,13 +2,13 @@ import { useState } from "react";
 
 import Square from "./Square";
 
-const INITIAL_GAME_STATE = ["X","O","X","","","","","",""];
+const INITIAL_GAME_STATE = ["","","","","","","","",""];
 
 function Game() {
   const [gameState, setGameState] = useState(INITIAL_GAME_STATE);
   
   const handleCellClick = (event: any) => {
-    console.log("cell clicked!", event.target.getAttribute("data-cell-index"));
+    const cellIndex = Number(event.target.getAttribute("data-cell-index"));
   };
 
 
