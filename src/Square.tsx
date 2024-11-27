@@ -1,7 +1,6 @@
 
 type Props = {
     player?: string;
-    
 };
 
 function Square({ player }: Props) {
