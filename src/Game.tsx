@@ -20,7 +20,11 @@ function Game() {
       <div>
         <div className="grid grid-cols-3 gap-3 mx-auto w-96">
         {gameState.map((player, index) => (
-          <Square key={index} {...{ player}} />
+          <Square
+           key={index}
+           onClick={handleCellClick} 
+           {...{ index, player}}
+          />
         ))}
         </div>
 
