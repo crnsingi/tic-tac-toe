@@ -11,7 +11,7 @@ function Game() {
       </h1>
       <div>
         <div>
-        {INITIAL_GAME_STATE.map((player, index) => (
+        {gameState.map((player, index) => (
           <div>{player}</div>
         ))}
         </div>
