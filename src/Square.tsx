@@ -1,7 +1,8 @@
 
 type Props = {
+    player?: string;
     
-}
+};
 
 function Square({ children }: Props) {
     const scale = player ? "scale-100" : "scale-0"
