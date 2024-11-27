@@ -1,7 +1,7 @@
 
 type Props = {
-    index: string
-    onClick(): void
+    index: number;
+    onClick(event: any): void
     player?: string;
 };
 
