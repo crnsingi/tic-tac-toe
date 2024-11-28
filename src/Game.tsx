@@ -8,14 +8,16 @@ function Game() {
   const [gameState, setGameState] = useState(INITIAL_GAME_STATE);
   const [currentPlayer, setcurrentPlayer] = useState("X");
 
+
+  useEffect(() => {
+    changePlayer();
+  }, [gameState]);
+
   const changePlayer = () => {
     setcurrentPlayer(currentPlayer === "X" ? "O" : "X");
+  };
 
-    useEffect(() => {
-
-    }, [gameState])
-
-  }
+  
   
   const handleCellClick = (event: any) => {
     const cellIndex = Number(event.target.getAttribute("data-cell-index"));
