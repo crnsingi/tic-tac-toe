@@ -13,6 +13,10 @@ function Game() {
     checkForWinner()
   }, [gameState]);
 
+  const checkForWinner = () => {
+    
+  }
+
   const changePlayer = () => {
     setcurrentPlayer(currentPlayer === "X" ? "O" : "X");
   };
