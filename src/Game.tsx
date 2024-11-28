@@ -31,6 +31,7 @@ function Game() {
 
     const newPlayerScore = scores[currentPlayer] +1;
     const newScores = { ...scores};
+    newScores[currentPlayer] = newPlayerScore;
 
 
     resetBoard()
