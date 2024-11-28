@@ -44,6 +44,11 @@ function Game() {
     }
 
     if(roundWon) {
+      window.alert(`Congrats player ${currentPlayer}! You are the winner!`)
+      return
+    }
+
+    if (!gameState.includes("")) {
       
     }
   };
