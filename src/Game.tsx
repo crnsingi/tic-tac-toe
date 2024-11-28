@@ -13,10 +13,10 @@ function Game() {
 
 
     const currentValue = gameState[cellIndex];
-    console.log(
-      " 🚀  ~ file: Game.tsx ~ line 14 ~ handleCellClick ~ currentValue",
-      currentValue
-    );
+    if (currentValue) {
+      return
+    }
+ 
   };
 
 
