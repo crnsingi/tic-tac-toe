@@ -34,7 +34,11 @@ function Game() {
       let c = gameState[winCombo[2]]
 
       if ([a, b, c].includes("")){
+        continue
+      }
 
+      if(a===b && b===c) {
+        
       }
     }
   };
