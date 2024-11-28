@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import Square from "./Square";
 
 const INITIAL_GAME_STATE = ["","","","","","","","",""];
-const INITIAL_SCORES = {X: 0, 0: 0}
-
+const INITIAL_SCORES = { X: 0, O: 0 }
 const WINNING_COMBOS = [
   [0, 1, 2],
   [3, 4, 5],
@@ -18,6 +17,7 @@ const WINNING_COMBOS = [
 function Game() {
   const [gameState, setGameState] = useState(INITIAL_GAME_STATE);
   const [currentPlayer, setcurrentPlayer] = useState("X");
+  const [scores, setScores] = useState(INITIAL_SCORES);
 
 
   useEffect(() => {
