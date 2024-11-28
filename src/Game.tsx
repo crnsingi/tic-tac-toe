@@ -16,6 +16,8 @@ function Game() {
     if (currentValue) {
       return
     }
+
+    const newValues = [...gameState]
  
   };
 
