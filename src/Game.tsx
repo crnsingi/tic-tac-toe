@@ -25,9 +25,10 @@ function Game() {
   const [scores, setScores] = useState(INITIAL_SCORES);
 
   useEffect(()=> {
-    const storedScores =JSON.parse(localStorage.getItem("scores") || "")
-    setScores(storedScores);
-
+    const storedScores = localStorage.getItem("scores");
+    if(storedScores) {
+      setScores(JSON.parse(storedScores));
+    }
   }, []);
 
 
