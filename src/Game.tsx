@@ -24,9 +24,11 @@ function Game() {
   const [currentPlayer, setcurrentPlayer] = useState("X");
   const [scores, setScores] = useState(INITIAL_SCORES);
 
-  useEffect(()=>{
+  useEffect(()=> {
+    const storedScores =JSON.parse(localStorage.getItem("scores") || "")
+    setScores(storedScores);
 
-  }, [])
+  }, []);
 
 
   useEffect(() => {
