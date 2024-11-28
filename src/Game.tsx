@@ -23,12 +23,14 @@ function Game() {
     checkForWinner()
   }, [gameState]);
 
+  const resetBoard = () => setGameState(INITIAL_GAME_STATE);
+
   const handleWin = () => {
     window.alert(`Congrats player ${currentPlayer}! You are the winner`);
   }
 
   const handleDraw = () => {
-    window.alert("The game ended in a draw")
+    window.alert("The game ended in a draw");
   }
 
   const checkForWinner = () => {
