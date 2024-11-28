@@ -3,8 +3,7 @@ import Square from "./Square";
 
 type Scores = {
   [key: string]: number
-
-}
+};
 
 const INITIAL_GAME_STATE = ["","","","","","","","",""];
 const INITIAL_SCORES = { X: 0, O: 0 }
@@ -34,7 +33,7 @@ function Game() {
 
   useEffect(() => {
     if(gameState === INITIAL_GAME_STATE) {
-      return
+      return;
     }
     checkForWinner()
   }, [gameState]);
