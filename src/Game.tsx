@@ -26,7 +26,11 @@ function Game() {
   const checkForWinner = () => {
     let roundWon = false
 
-  }
+    for(let i = 0; i < WINNING_COMBOS.length; i++) {
+
+    }
+
+  };
 
   const changePlayer = () => {
     setcurrentPlayer(currentPlayer === "X" ? "O" : "X");
