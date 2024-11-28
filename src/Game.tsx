@@ -6,7 +6,11 @@ const INITIAL_GAME_STATE = ["","","","","","","","",""];
 
 function Game() {
   const [gameState, setGameState] = useState(INITIAL_GAME_STATE);
-  const [currentPlayer, setcurrentPlayer] = useState("X")
+  const [currentPlayer, setcurrentPlayer] = useState("X");
+
+  const changePlayer = () => {
+    
+  }
   
   const handleCellClick = (event: any) => {
     const cellIndex = Number(event.target.getAttribute("data-cell-index"));
