@@ -27,6 +27,7 @@ function Game() {
     let roundWon = false
 
     for(let i = 0; i < WINNING_COMBOS.length; i++) {
+      const winCombo = WINNING_COMBOS[i];
 
     }
 
