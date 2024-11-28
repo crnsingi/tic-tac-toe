@@ -10,7 +10,7 @@ function Game() {
 
 
   useEffect(() => {
-    changePlayer();
+    checkForWinner()
   }, [gameState]);
 
   const changePlayer = () => {
