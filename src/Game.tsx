@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import Square from "./Square";
 
 type Scores = {
-  
+  [key: string]: number
+
 }
 
 const INITIAL_GAME_STATE = ["","","","","","","","",""];
