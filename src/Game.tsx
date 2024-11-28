@@ -35,13 +35,13 @@ function Game() {
     window.alert(`Congrats player ${currentPlayer}! You are the winner`);
 
     const newPlayerScore = scores[currentPlayer] +1;
-    const newScores = { ...scores};
+    const newScores = { ...scores };
     newScores[currentPlayer] = newPlayerScore;
     setScores(newScores);
 
 
-    resetBoard()
-  }
+    resetBoard();
+  };
 
   const handleDraw = () => {
     window.alert("The game ended in a draw");
@@ -119,7 +119,10 @@ function Game() {
         ))}
         </div>
 
-        <div>Scores Go Here</div>
+        <div>
+          <p>Next Player:</p>
+
+        </div>
       </div>
       </div>
   );
