@@ -44,6 +44,7 @@ function Game() {
     const newScores = { ...scores };
     newScores[currentPlayer] = newPlayerScore;
     setScores(newScores);
+    localStorage.setItem("scores", JSON.stringify(newScores))
 
 
     resetBoard();
