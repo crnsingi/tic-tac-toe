@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import Square from "./Square";
 
+type Scores = {
+  
+}
+
 const INITIAL_GAME_STATE = ["","","","","","","","",""];
 const INITIAL_SCORES = { X: 0, O: 0 }
 const WINNING_COMBOS = [
