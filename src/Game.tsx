@@ -122,7 +122,7 @@ function Game() {
         <div>
           <p>Next Player: <span>{currentPlayer}</span></p>
           <p>Player X wins: <span>{scores["X"]}</span></p>
-
+          <p>Player 0 wins: <span>{scores["O"]}</span></p>
         </div>
       </div>
       </div>
