@@ -8,7 +8,9 @@ function Game() {
   const [gameState, setGameState] = useState(INITIAL_GAME_STATE);
   
   const handleCellClick = (event: any) => {
-    const cellIndex = Number(event.target.getAttribute("data-cell-index"));
+    const cellIndex = Number(event.target.getAttribute("data-cell-index"))
+
+    const currentValue = gameState[]
   };
 
 
