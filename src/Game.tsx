@@ -120,7 +120,7 @@ function Game() {
         </div>
 
         <div className="mx-auto w-96 text-2xl text-serif">
-          <p>
+          <p className="text-white mt-5">
             Next Player: <span>{currentPlayer}</span>
             </p>
           <p>
