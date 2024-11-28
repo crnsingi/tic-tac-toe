@@ -9,7 +9,8 @@ function Game() {
   const [currentPlayer, setcurrentPlayer] = useState("X");
 
   const changePlayer = () => {
-    
+    setcurrentPlayer[currentPlayer] = useState("X");
+
   }
   
   const handleCellClick = (event: any) => {
