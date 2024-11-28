@@ -120,7 +120,7 @@ function Game() {
         </div>
 
         <div>
-          <p>Next Player:</p>
+          <p>Next Player: <span>{currentPlayer}</span></p>
 
         </div>
       </div>
