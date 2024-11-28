@@ -24,6 +24,10 @@ function Game() {
   const [currentPlayer, setcurrentPlayer] = useState("X");
   const [scores, setScores] = useState(INITIAL_SCORES);
 
+  useEffect(()=>{
+
+  }, [])
+
 
   useEffect(() => {
     checkForWinner()
