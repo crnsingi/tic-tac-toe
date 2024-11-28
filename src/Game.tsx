@@ -12,8 +12,8 @@ function Game() {
     setcurrentPlayer(currentPlayer === "X" ? "O" : "X");
 
     useEffect(() => {
-      
-    })
+
+    }, [gameState])
 
   }
   
