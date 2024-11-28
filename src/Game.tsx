@@ -9,7 +9,11 @@ function Game() {
   const [currentPlayer, setcurrentPlayer] = useState("X");
 
   const changePlayer = () => {
-    setcurrentPlayer[currentPlayer] = useState("X");
+    setcurrentPlayer(currentPlayer === "X" ? "O" : "X");
+
+    useEffect(() => {
+      
+    })
 
   }
   
