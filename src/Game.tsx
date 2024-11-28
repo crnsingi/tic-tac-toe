@@ -29,6 +29,9 @@ function Game() {
   const handleWin = () => {
     window.alert(`Congrats player ${currentPlayer}! You are the winner`);
 
+    const newPlayerScore = scores[currentPlayer] +1;
+
+
     resetBoard()
   }
 
