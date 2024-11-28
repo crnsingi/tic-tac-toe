@@ -6,11 +6,17 @@ const INITIAL_GAME_STATE = ["","","","","","","","",""];
 
 function Game() {
   const [gameState, setGameState] = useState(INITIAL_GAME_STATE);
+  const [currentPlayer, setcurrentPlayer] = useState("X")
   
   const handleCellClick = (event: any) => {
-    const cellIndex = Number(event.target.getAttribute("data-cell-index"))
+    const cellIndex = Number(event.target.getAttribute("data-cell-index"));
 
-    const currentValue = gameState[]
+
+    const currentValue = gameState[cellIndex];
+    console.log(
+      " 🚀  ~ file: Game.tsx ~ line 14 ~ handleCellClick ~ currentValue",
+      currentValue
+    );
   };
 
 
