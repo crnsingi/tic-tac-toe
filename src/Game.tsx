@@ -33,7 +33,9 @@ function Game() {
       let b = gameState[winCombo[1]]
       let c = gameState[winCombo[2]]
 
+      if ([a, b, c].includes("")){
 
+      }
     }
   };
 
